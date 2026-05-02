@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone | Exclusive Tech Offers SL</title>
+    <style>
+        :root {
+            --primary: #0ea5e9;
+            --dark: #0f172a;
+            --sale: #ef4444;
+            --bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: #1e293b;
+            scroll-behavior: smooth;
+        }
+
+        /* Flash Sale Header */
+        .flash-sale {
+            background: linear-gradient(90deg, #ef4444, #f97316);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header {
+            background-color: var(--dark);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1e293b;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover { color: var(--primary); }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+            margin: 50px 0 25px;
+        }
+
+        /* Product Cards */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            position: relative;
+            border: 1px solid #e2e8f0;
+        }
+
+        .product-card:hover { transform: translateY(-10px); }
+
+        /* Offer Badges */
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: var(--sale);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .details { padding: 20px; text-align: center; }
+        
+        .price-container { margin: 15px 0; }
+        .old-price { text-decoration: line-through; color: #94a3b8; font-size: 0.9rem; margin-right: 10px; }
+        .new-price { color: #059669; font-size: 1.4rem; font-weight: 800; }
+
+        .promo-tag {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 4px 8px;
+            font-size: 0.75rem;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: var(--dark);
+            color: #94a3b8;
+            text-align: center;
+            padding: 40px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flash-sale">
+    ⚡ RAMADAN SPECIAL: UP TO 40% OFF ON SELECTED ITEMS | FREE DELIVERY ISLANDWIDE ⚡
+</div>
+
+<header>
+    <h1>TECHZONE</h1>
+    <p>Sri Lanka's No. 1 Electronics Destination</p>
+</header>
+
+<nav>
+    <a href="#smartphones">Smartphones</a>
+    <a href="#laptops">Laptops</a>
+    <a href="#audio">Audio</a>
+    <a href="#wearables">Wearables</a>
+    <a href="#gaming">Gaming</a>
+</nav>
+
+<div class="container">
+
+    <section id="smartphones">
+        <h2 class="category-title">Smartphones</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="badge">OFFER</div>
+                <img src="https://images.unsplash.com/photo-1738830251513-a7bfef4b53c6?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="details">
+                    <span class="promo-tag">Free Galaxy Buds with Purchase</span>
+                    <h3>Samsung S24 Ultra</h3>
+                    <div class="price-container">
+                        <span class="old-price">Rs. 385,000</span>
+                        <span class="new-price">Rs. 345,000</span>
+                    </div>
+                    <p style="color: green; font-weight: bold;">In Stock</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="badge">BEST SELLER</div>
+                <img src="https://images.unsplash.com/photo-1758467700578-7491a5c7eedd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="details">
+                    <h3>iPhone 17 Pro</h3>
+                    <div class="price-container">
+                        <span class="new-price">Rs. 491,000</span>
+                    </div>
+                    <p>0% Installments Available</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="badge">OFFER</div>
+                <img src="https://images.unsplash.com/photo-1724438192699-89f587b04c24?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="details">
+                    <h3>Google Pixel 9 pro</h3>
+                    <div class="price-container">
+                        <span class="old-price">Rs. 240,000</span>
+                        <span class="new-price">Rs. 229,000</span>
+                    </div>
+                    <p>Limited Time Deal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="laptops">
+        <h2 class="category-title">Laptops</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="badge">NEW ARRIVAL</div>
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500" alt="MacBook">
+                <div class="details">
+                    <span class="promo-tag">Free Laptop Bag Included</span>
+                    <h3>MacBook Air M3</h3>
+                    <div class="price-container">
+                        <span class="new-price">Rs. 365,000</span>
+                    </div>
+                    <p>Apple Authorized Warranty</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="badge">SAVE RS. 30k</div>
+                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=500" alt="Dell">
+                <div class="details">
+                    <h3>Dell XPS 13</h3>
+                    <div class="price-container">
+                        <span class="old-price">Rs. 450,000</span>
+                        <span class="new-price">Rs. 420,000</span>
+                    </div>
+                    <p>16GB RAM | 512GB SSD</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="badge" style="background:#64748b;">OUT OF STOCK</div>
+                <img src="https://images.unsplash.com/photo-1544006659-f0b21f04cb1d?w=500" alt="HP">
+                <div class="details">
+                    <h3>HP Pavilion 15</h3>
+                    <div class="price-container">
+                        <span class="new-price">Rs. 185,000</span>
+                    </div>
+                    <p>Notify Me When Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="audio">
+        <h2 class="category-title">Audio & Headphones</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="badge">HOT DEAL</div>
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Sony">
+                <div class="details">
+                    <h3>Sony WH-1000XM5</h3>
+                    <div class="price-container">
+                        <span class="old-price">Rs. 115,000</span>
+                        <span class="new-price">Rs. 95,000</span>
+                    </div>
+                    <p>Limited Units Left</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="badge">POPULAR</div>
+                <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500" alt="AirPods">
+                <div class="details">
+                    <h3>AirPods Pro 2</h3>
+                    <div class="price-container">
+                        <span class="new-price">Rs. 72,500</span>
+                    </div>
+                    <p>US Version (Type-C)</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="badge">FLASH SALE</div>
+                <img src="https://images.unsplash.com/photo-1589003077984-894e133dabab?w=500" alt="JBL">
+                <div class="details">
+                    <h3>JBL Go 3</h3>
+                    <div class="price-container">
+                        <span class="old-price">Rs. 18,500</span>
+                        <span class="new-price">Rs. 14,500</span>
+                    </div>
+                    <p>Waterproof & Portable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wearables">
+        <h2 class="category-title">Smartwatches</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="badge">OFFER</div>
+                <img src="https://images.unsplash.com/photo-1649494652496-d239be7b1546?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="details">
+                    <span class="promo-tag">Bundle Offer: Buy 2 for 5% Off</span>
+                    <h3>Apple Watch Series 10</h3>
+                    <div class="price-container">
+                        <span class="new-price">Rs. 159,000</span>
+                    </div>
+                    <p>45mm Midnight Aluminum</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1722156163505-7d3d5d5dd85a?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="details">
+                    <h3>Samsung Watch 6</h3>
+                    <div class="price-container">
+                        <span class="new-price">Rs. 68,000</span>
+                    </div>
+                    <p>Global Version</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="badge">LOWEST PRICE</div>
+                <img src="https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=500" alt="Fitbit">
+                <div class="details">
+                    <h3>Fitbit Charge 6</h3>
+                    <div class="price-container">
+                        <span class="old-price">Rs. 58,000</span>
+                        <span class="new-price">Rs. 48,000</span>
+                    </div>
+                    <p>Original Sealed Pack</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gaming">
+        <h2 class="category-title">Gaming Accessories</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1614882105050-b81b3298ec47?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="details">
+                    <h3>PS5 DualSense</h3>
+                    <div class="price-container">
+                        <span class="new-price">Rs. 24,500</span>
+                    </div>
+                    <p>Sony Official Warranty</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="badge">20% OFF</div>
+                <img src="https://media.istockphoto.com/id/1219428739/photo/razer-huntsman-elite.jpg?s=1024x1024&w=is&k=20&c=VO-K6nPEW7Bs8R3rlqyj9kGKnytcwOb1rHZFWfFEew8=">
+                <div class="details">
+                    <h3>Razer Keyboard</h3>
+                    <div class="price-container">
+                        <span class="old-price">Rs. 32,500</span>
+                        <span class="new-price">Rs. 26,000</span>
+                    </div>
+                    <p>RGB Backlit Mechanical</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="badge">PRO CHOICE</div>
+                <img src="https://images.unsplash.com/photo-1616071358846-9f34f471815d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="details">
+                    <span class="promo-tag">Free Gaming Mousepad</span>
+                    <h3>Logitech G Pro X</h3>
+                    <div class="price-container">
+                        <span class="new-price">Rs. 42,000</span>
+                    </div>
+                    <p>Superlight Wireless</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p><strong>TechZone Sri Lanka</strong></p>
+    <p>beach Road , matara | Bus station </p>
+    <p>Hotline: 011 125 1255 | Cash on Delivery Available Islandwide</p>
+</footer>
+
+</body>
+</html>
